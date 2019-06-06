@@ -1,0 +1,32 @@
+# General
+.DS_Store
+.idea
+.vscode
+.ipynb_checkpoints
+*.pyc
+*~
+
+# Env
+env/
+env_py3/
+node_modules/
+parser.out
+
+# Exclude media folder except files used for import testing
+media/contacts
+media/csv_imports
+media/flow
+media/messages
+media/orgs
+media/recordings
+media/test_orgs
+media/tmp
+media/attachments
+media/flow_pdf
+media/flows_images
+media/cache
+
+# Docker
+docker.settings.prod
+docker.settings.aptible-stage
+docker.settings.aptible-prod

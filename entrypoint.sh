@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo Collectstatic
+python manage.py collectstatic --noinput
+
 echo Compressor
 python manage.py compress --extension=.haml --force
 
