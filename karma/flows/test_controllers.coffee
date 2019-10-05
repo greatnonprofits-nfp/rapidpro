@@ -248,7 +248,7 @@ describe 'Controllers:', ->
       # checkout our timeout rule as the right settings
       lastRule = ruleset.rules[ruleset.rules.length - 1]
       expect(lastRule['test']['type']).toBe('timeout')
-      expect(lastRule['test']['minutes']).toBe(10)
+      expect(lastRule['test']['minutes']).toBe(120)
 
       # simulate open ended questions with timeout
       editRules ruleset, (scope) ->
@@ -267,7 +267,7 @@ describe 'Controllers:', ->
       expect(allResponseRule['test']['type']).toBe('true')
       expect(allResponseRule.category.base).toBe('All Responses')
       expect(timeoutRule['test']['type']).toBe('timeout')
-      expect(timeoutRule['test']['minutes']).toBe(10)
+      expect(timeoutRule['test']['minutes']).toBe(120)
 
     it 'should save group split rulesets', ->
       loadFavoritesFlow()
