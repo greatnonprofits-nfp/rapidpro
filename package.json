@@ -9,7 +9,7 @@
     ]
   },
   "dependencies": {
-0   "@nyaruka/flow-editor": "github:greatnonprofits-nfp/floweditor#current-ccl-version",
+    "@greatnonprofits-nfp/flow-editor": "1.6.2",
     "coffeescript": "1.12.7",
     "less": "2.7.1",
     "react": "16.3.2",

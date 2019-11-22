@@ -1056,31 +1056,31 @@ NodeEditorController = ($rootScope, $scope, $modalInstance, $timeout, $log, Flow
     ruleset.rules[0].category[Flow.flow.base_language] = 'All Responses'
 
   formData.timeoutOptions = [
-    {value:10, text:'10 seconds'},
-    {value:20, text:'20 seconds'},
-    {value:30, text:'30 seconds'},
-    {value:45, text:'45 seconds'},
-    {value:60, text:'1 minute'},
-    {value:120, text:'2 minutes'},
-    {value:180, text:'3 minutes'},
-    {value:240, text:'4 minutes'},
-    {value:300, text:'5 minutes'},
-    {value:600, text:'10 minutes'},
-    {value:900, text:'15 minutes'},
-    {value:1800, text:'30 minutes'},
-    {value:3600, text:'1 hour'},
-    {value:7200, text:'2 hours'},
-    {value:10800, text:'3 hours'},
-    {value:21600, text:'6 hours'},
-    {value:43200, text:'12 hours'},
-    {value:64800, text:'18 hours'},
-    {value:86400, text:'1 day'},
-    {value:172800, text:'2 days'},
-    {value:259200, text:'3 days'},
-    {value:604800, text:'1 week'},
+    {value:0.166667, text:'10 seconds'},
+    {value:0.333333, text:'20 seconds'},
+    {value:0.5, text:'30 seconds'},
+    {value:0.75, text:'45 seconds'},
+    {value:1, text:'1 minute'},
+    {value:2, text:'2 minutes'},
+    {value:3, text:'3 minutes'},
+    {value:4, text:'4 minutes'},
+    {value:5, text:'5 minutes'},
+    {value:10, text:'10 minutes'},
+    {value:15, text:'15 minutes'},
+    {value:30, text:'30 minutes'},
+    {value:60, text:'1 hour'},
+    {value:120, text:'2 hours'},
+    {value:180, text:'3 hours'},
+    {value:360, text:'6 hours'},
+    {value:720, text:'12 hours'},
+    {value:1080, text:'18 hours'},
+    {value:1440, text:'1 day'},
+    {value:2880, text:'2 days'},
+    {value:4320, text:'3 days'},
+    {value:10080, text:'1 week'},
   ]
 
-  minutes = 60
+  minutes = 5
   formData.hasTimeout = false
 
   # check if we have a timeout rule present
